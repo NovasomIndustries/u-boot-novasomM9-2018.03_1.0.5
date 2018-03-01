@@ -1,0 +1,5 @@
+export ARCH=arm64
+export PATH=$PATH:/Devel/NOVAsom_SDK/Xcompiler/XarmGlibc_6.4_64_4_11_hfp/bin
+export CROSS_COMPILE=aarch64-buildroot-linux-gnu-
+export PS1='[SDK64]$ '
+

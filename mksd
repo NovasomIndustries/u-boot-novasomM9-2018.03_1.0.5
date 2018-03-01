@@ -1,0 +1,5 @@
+#!/bin/sh
+SDCARD="/dev/sdb"
+sudo dd if=/dev/zero of=${SDCARD} bs=1M count=1
+cat spl/sunxi-spl.bin u-boot.itb > u-boot-sunxi-with-spl.bin
+sudo dd if=u-boot-sunxi-with-spl.bin of=${SDCARD} bs=8k seek=1
